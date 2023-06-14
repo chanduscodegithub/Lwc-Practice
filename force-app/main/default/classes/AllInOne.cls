@@ -5,6 +5,7 @@ public with sharing class AllInOne {
            return [select name, CloseDate, Amount FROM opportunity ORDER BY CreatedDate desc];
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
+            // just added comment to see change in github
         }
     }
 }
