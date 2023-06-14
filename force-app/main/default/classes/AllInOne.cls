@@ -6,6 +6,14 @@ public with sharing class AllInOne {
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
             // just added comment to see change in github
+           // push change
+           //comiy
+           //commit and synvc
+           //for pull request
+
+          // check again
+          //hhh
+          //merge now
         }
     }
 }
