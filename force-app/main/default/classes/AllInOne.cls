@@ -8,6 +8,7 @@ public with sharing class AllInOne {
             // just added comment to see change in github
            // push change
            //comiy
+           //commit and synvc
         }
     }
 }
