@@ -6,6 +6,7 @@ public with sharing class getAccounts {
             return acc;
 
                } catch (Exception e) {
+                //write Exception;
             throw new AuraHandledException(e.getMessage());
         }
     }
