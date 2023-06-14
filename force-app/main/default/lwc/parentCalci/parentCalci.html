@@ -1,0 +1,17 @@
+<template>
+    <lightning-card variant="Narrow" title="Calculator">
+        <lightning-input type="number" variant="standard" name="x" label="" placeholder="enter x value.." onchange={handleChange}></lightning-input>
+        <lightning-input type="number" variant="standard" name="y" label="" placeholder="enter y value.." onchange={handleChange}></lightning-input>
+        <br>
+        <lightning-button-group>
+            <lightning-button label="Add" onclick={handleClick}></lightning-button>
+            <lightning-button label="Sub" onclick={handleClick}></lightning-button>
+            <lightning-button label="Mul" onclick={handleClick}></lightning-button>
+            <lightning-button label="Div" onclick={handleClick}></lightning-button>
+            <lightning-button label="Mod" onclick={handleClick}></lightning-button>
+        </lightning-button-group>
+        <br>
+        <c-calci ></c-calci>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title ="Calculator">
+        <h1>I am parent Component</h1>
+        <lightning-input type="Number" label ="Enter First Number " name = "firstNumber" onchange={handleChange} > </lightning-input>
+        <lightning-input type="Number" label ="Enter Second Number " name = "secondNumber" onchange={handleChange}  ></lightning-input>
+        <c-calculate-in-child  num1 = {firstNumber}  num2 = {secondNumber} > </c-calculate-in-child> 
+        </lightning-card>
+    
+</template>

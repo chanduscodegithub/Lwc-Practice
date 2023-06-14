@@ -1,0 +1,17 @@
+<template>
+    <lightning-card variant="Narrow" title="Opportunity" icon-name="standard:opportunity">
+        <lightning-button variant="brand" label='Add Opportunity' title="AddOpp" slot="actions" onclick={handleClick}></lightning-button>
+        <template lwc:if={createFalge}>
+            <lightning-record-form object-api-name='Opportunity' fields={fields} oncancel={handleCancel} onsuccess={handleSuccess}></lightning-record-form>
+        </template>
+
+
+
+        <div class="slds-scrollable_y" style="height:20rem" tabindex="0">
+            <lightning-datatable key-field="id" data={oppsList} columns={columns}>
+            </lightning-datatable>
+        </div>
+
+    </lightning-card>
+
+</template>
